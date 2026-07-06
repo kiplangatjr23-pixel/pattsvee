@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pattsvee Catering Gallery - Premium event photography and catering showcase.">
+    <meta name="keywords" content="catering gallery, event photos, premium catering">
+    <meta name="author" content="Pattsvee Catering">
+    <title>Pattsvee Catering Gallery</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-mode">
+    <nav class="navbar" id="navbar">
+        <div class="container navbar-container">
+            <div class="logo">
+                <i class="fas fa-utensils"></i>
+                <span>Pattsvee Catering</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="index.html#services" class="nav-link">Services</a></li>
+                <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="section" style="padding-top: 140px;">
+            <div class="container">
+                <h1 class="section-title" data-aos="fade-up">Pattsvee Catering Gallery</h1>
+                <p class="section-subtitle" data-aos="fade-up">Beautiful moments from our most premium events and catering experiences.</p>
+                <div class="gallery-actions" data-aos="fade-up">
+                    <a href="index.html" class="btn btn-outline">Back to Homepage</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery section">
+            <div class="container">
+                <div class="gallery-grid" data-aos="fade-up">
+                    <div class="gallery-item">
+                        <img src="assets/images/gallery-1.jpg" alt="Kenyan wedding catering celebration">
+                        <div class="gallery-overlay"><h3>Wedding Catering</h3></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/images/gallery-2.jpg" alt="Kenyan corporate catering event">
+                        <div class="gallery-overlay"><h3>Corporate Events</h3></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/images/gallery-3.jpg" alt="Kenyan birthday catering celebration">
+                        <div class="gallery-overlay"><h3>Birthday Celebrations</h3></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/images/gallery-4.jpg" alt="Outdoor Kenya catering event">
+                        <div class="gallery-overlay"><h3>Outdoor Catering</h3></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/images/gallery-5.jpg" alt="Luxury Kenyan dining experience">
+                        <div class="gallery-overlay"><h3>VIP Dining</h3></div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/images/gallery-6.jpg" alt="Kenyan event decoration and catering">
+                        <div class="gallery-overlay"><h3>Event Decoration</h3></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            AOS.init({ duration: 900, once: true });
+        });
+    </script>
+</body>
+</html>

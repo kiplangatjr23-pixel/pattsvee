@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pattsvee Catering - Premium Luxury Catering Services in Migori, Kenya. Weddings, Corporate Events, Birthdays & More.">
+    <meta name="keywords" content="catering, events, weddings, corporate, Migori Kenya">
+    <meta name="author" content="Pattsvee Catering">
+    <title>Pattsvee Catering - Premium Catering Services in Migori, Kenya</title>
+    
+    <!-- Bootstrap Icons & Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loader">
+            <div class="loader-circle"></div>
+            <p>Pattsvee Catering</p>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="container navbar-container">
+            <a href="#hero" class="logo">
+                <img src="assets/images/logo.png" alt="Pattsvee Catering Logo">
+                <span>Pattsvee Catering</span>
+            </a>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#hero" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#packages" class="nav-link">Packages</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#booking" class="nav-link">Booking</a></li>
+                <li><a href="#quotation" class="nav-link">Quote</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <!-- Theme Toggle -->
+            <button class="theme-toggle" id="themeToggle" title="Toggle Dark/Light Mode">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <div class="hero-content" data-aos="fade-up">
+            <h1 class="hero-title">Premium Catering Excellence</h1>
+            <p class="hero-subtitle">Luxury Culinary Experiences for Every Occasion</p>
+            
+            <div class="hero-cta" data-aos="fade-up" data-aos-delay="200">
+                <button class="btn btn-primary" onclick="scrollToSection('booking')">
+                    <i class="fas fa-calendar-check"></i> Book Catering
+                </button>
+                <button class="btn btn-secondary" onclick="scrollToSection('quotation')">
+                    <i class="fas fa-file-invoice-dollar"></i> Get Quote
+                </button>
+                <button class="btn btn-outline" onclick="scrollToSection('packages')">
+                    <i class="fas fa-box-open"></i> View Packages
+                </button>
+            </div>
+
+            <div class="hero-stats" data-aos="fade-up" data-aos-delay="400">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="500">0</span>
+                    <span class="stat-label">Events Served</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="1200">0</span>
+                    <span class="stat-label">Happy Clients</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="5">0</span>
+                    <span class="stat-label">Years Excellence</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">About Pattsvee Catering</h2>
+            
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <h3>Your Trusted Catering Partner</h3>
+                    <p>
+                        With over 5+ years of excellence in premium catering, Pattsvee Catering has become the go-to choice for discerning clients across Migori and beyond. Based at the prestigious Hass Petroleum Station, Migori, we combine culinary expertise with impeccable service.
+                    </p>
+                    <p>
+                        Our passion for creating unforgettable gastronomic experiences is reflected in every event we cater. From intimate gatherings to grand celebrations, we deliver excellence with every meal.
+                    </p>
+                    
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Premium Quality Ingredients</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Professional Staff & Coordination</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Customized Menu Planning</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>On-Time Delivery & Setup</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Competitive Pricing</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>24/7 Customer Support</span>
+                        </div>
+                    </div>
+
+                    <a href="https://wa.me/254722113855" target="_blank" class="btn btn-primary">
+                        <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                    </a>
+                </div>
+
+                <div class="about-image" data-aos="fade-left">
+                    <div class="image-card">
+                        <div class="image-placeholder">
+                            <i class="fas fa-image"></i>
+                            <p>Culinary Expertise</p>
+                        </div>
+                    </div>
+                    
+                    <div class="location-card">
+                        <h4><i class="fas fa-map-marker-alt"></i> Location</h4>
+                        <p>Hass Petroleum Station</p>
+                        <p>Migori, Kenya</p>
+                        <a href="https://maps.google.com/?q=Hass+Petroleum+Station+Migori" target="_blank" class="btn btn-secondary btn-sm">
+                            View on Map
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Our Services</h2>
+            <p class="section-subtitle" data-aos="fade-up">Comprehensive catering solutions for every occasion</p>
+            
+            <div class="services-grid">
+                <!-- Wedding Catering -->
+                <div class="service-card" data-aos="fade-up">
+                    <div class="service-icon">
+                        <i class="fas fa-ring"></i>
+                    </div>
+                    <h3>Wedding Catering</h3>
+                    <p>Elegant culinary experiences for your special day. From intimate ceremonies to grand receptions.</p>
+                    <button class="btn btn-outline btn-sm" onclick="bookService('Wedding Catering')">Book Now</button>
+                </div>
+
+                <!-- Corporate Events -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Corporate Events</h3>
+                    <p>Professional catering for conferences, seminars, and corporate gatherings with seamless execution.</p>
+                    <button class="btn btn-outline btn-sm" onclick="bookService('Corporate Events')">Book Now</button>
+                </div>
+
+                <!-- Birthday Parties -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-birthday-cake"></i>
+                    </div>
+                    <h3>Birthday Celebrations</h3>
+                    <p>Make birthdays memorable with our special menu options and personalized service packages.</p>
+                    <button class="btn btn-outline btn-sm" onclick="bookService('Birthday Party')">Book Now</button>
+                </div>
+
+                <!-- Outdoor Catering -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-tree"></i>
+                    </div>
+                    <h3>Outdoor Catering</h3>
+                    <p>Deliver exceptional culinary experiences in outdoor settings with complete setup and logistics.</p>
+                    <button class="btn btn-outline btn-sm" onclick="bookService('Outdoor Catering')">Book Now</button>
+                </div>
+
+                <!-- Graduation Parties -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Graduation Parties</h3>
+                    <p>Celebrate academic achievements with sophisticated catering tailored for graduation events.</p>
+                    <button class="btn btn-outline btn-sm" onclick="bookService('Graduation Party')">Book Now</button>
+                </div>
+
+                <!-- VIP Dining -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <h3>VIP Dining Experience</h3>
+                    <p>Luxury dining experiences with premium service, exclusive menus, and refined hospitality.</p>
+                    <button class="btn btn-outline btn-sm" onclick="bookService('VIP Dining')">Book Now</button>
+                </div>
+
+                <!-- Funeral Catering -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="service-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Funeral Catering</h3>
+                    <p>Respectful and dignified catering services to support your family during difficult times.</p>
+                    <button class="btn btn-outline btn-sm" onclick="bookService('Funeral Catering')">Book Now</button>
+                </div>
+
+                <!-- Event Decoration -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="700">
+                    <div class="service-icon">
+                        <i class="fas fa-sparkles"></i>
+                    </div>
+                    <h3>Event Decoration</h3>
+                    <p>Stunning visual transformations that complement your event with elegant and creative designs.</p>
+                    <button class="btn btn-outline btn-sm" onclick="bookService('Event Decoration')">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages & Menu Section -->
+    <section id="packages" class="packages section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Catering Packages</h2>
+            <p class="section-subtitle" data-aos="fade-up">Choose the perfect package for your event</p>
+
+            <div class="packages-controls" data-aos="fade-up">
+                <input type="text" id="packageSearch" class="search-box" placeholder="Search packages...">
+            </div>
+
+            <div class="packages-grid" id="packagesGrid">
+                <!-- Packages will be loaded here by JavaScript -->
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Online Booking System -->
+    <section id="booking" class="booking section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Book Your Event</h2>
+            <p class="section-subtitle" data-aos="fade-up">Fast, easy, and secure booking in minutes</p>
+
+            <div class="booking-form-container" data-aos="fade-up">
+                <form class="booking-form" id="bookingForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="clientName">Full Name *</label>
+                            <input type="text" id="clientName" name="clientName" required>
+                            <small class="error-message"></small>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="clientPhone">Phone Number *</label>
+                            <input type="tel" id="clientPhone" name="clientPhone" placeholder="+254..." required>
+                            <small class="error-message"></small>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="eventType">Event Type *</label>
+                            <select id="eventType" name="eventType" required>
+                                <option value="">Select Event Type</option>
+                                <option value="Wedding">Wedding</option>
+                                <option value="Corporate">Corporate Event</option>
+                                <option value="Birthday">Birthday Party</option>
+                                <option value="Graduation">Graduation Party</option>
+                                <option value="Outdoor">Outdoor Catering</option>
+                                <option value="VIP">VIP Dining</option>
+                                <option value="Funeral">Funeral Event</option>
+                                <option value="Other">Other</option>
+                            </select>
+                            <small class="error-message"></small>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="eventDate">Event Date *</label>
+                            <input type="date" id="eventDate" name="eventDate" required>
+                            <small class="error-message"></small>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="guestCount">Number of Guests *</label>
+                            <input type="number" id="guestCount" name="guestCount" min="10" max="5000" required>
+                            <small class="error-message"></small>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="eventLocation">Event Location *</label>
+                            <input type="text" id="eventLocation" name="eventLocation" placeholder="City/Venue" required>
+                            <small class="error-message"></small>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="cateringPackage">Catering Package *</label>
+                            <select id="cateringPackage" name="cateringPackage" required>
+                                <option value="">Select Package</option>
+                            </select>
+                            <small class="error-message"></small>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="additionalNotes">Additional Notes</label>
+                        <textarea id="additionalNotes" name="additionalNotes" rows="4" placeholder="Any special requirements?"></textarea>
+                    </div>
+
+                    <div class="form-agreement">
+                        <input type="checkbox" id="agreeTerms" required>
+                        <label for="agreeTerms">I agree to the terms and conditions</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-lg">
+                        <i class="fas fa-check"></i> Complete Booking
+                    </button>
+                </form>
+
+                <div class="booking-info">
+                    <div class="info-card">
+                        <h4><i class="fas fa-info-circle"></i> Quick Info</h4>
+                        <ul>
+                            <li>✓ Instant booking confirmation</li>
+                            <li>✓ WhatsApp notification sent</li>
+                            <li>✓ 24-hour consultation available</li>
+                            <li>✓ Customization options available</li>
+                            <li>✓ Payment plans accepted</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instant Quotation Generator -->
+    <section id="quotation" class="quotation section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Generate Instant Quote</h2>
+            <p class="section-subtitle" data-aos="fade-up">Get a professional quotation in seconds</p>
+
+            <div class="quotation-container" data-aos="fade-up">
+                <div class="quotation-form">
+                    <div class="form-group">
+                        <label for="quotePackage">Select Package *</label>
+                        <select id="quotePackage" required onchange="updateQuotation()">
+                            <option value="">Choose a package</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="quoteGuests">Number of Guests *</label>
+                        <input type="number" id="quoteGuests" value="100" min="10" max="5000" onchange="updateQuotation()">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Extra Services</label>
+                        <div class="checkbox-group">
+                            <label>
+                                <input type="checkbox" name="extraServices" value="decoration" data-price="500" onchange="updateQuotation()">
+                                Premium Decoration (+KES 500)
+                            </label>
+                            <label>
+                                <input type="checkbox" name="extraServices" value="photography" data-price="2000" onchange="updateQuotation()">
+                                Professional Photography (+KES 2,000)
+                            </label>
+                            <label>
+                                <input type="checkbox" name="extraServices" value="transport" data-price="1500" onchange="updateQuotation()">
+                                Transportation (+KES 1,500)
+                            </label>
+                            <label>
+                                <input type="checkbox" name="extraServices" value="barista" data-price="800" onchange="updateQuotation()">
+                                Barista Service (+KES 800)
+                            </label>
+                        </div>
+                    </div>
+
+                    <button type="button" class="btn btn-primary" onclick="generateQuotationPDF()">
+                        <i class="fas fa-file-pdf"></i> Download as PDF
+                    </button>
+                </div>
+
+                <div class="quotation-display">
+                    <div class="quotation-card" id="quotationCard">
+                        <div class="quotation-header">
+                            <h3>Professional Quotation</h3>
+                            <p class="quotation-ref">Ref: <span id="quotationRef">--</span></p>
+                        </div>
+
+                        <div class="quotation-details">
+                            <div class="detail-row">
+                                <span>Package:</span>
+                                <strong id="quoteDisplayPackage">--</strong>
+                            </div>
+                            <div class="detail-row">
+                                <span>Number of Guests:</span>
+                                <strong id="quoteDisplayGuests">--</strong>
+                            </div>
+                            <div class="detail-row">
+                                <span>Base Price:</span>
+                                <strong id="quoteBasePrice">KES 0</strong>
+                            </div>
+                            <div class="detail-row extra-services" id="quoteExtraServices" style="display: none;">
+                                <span>Extra Services:</span>
+                                <strong id="quoteExtraTotal">KES 0</strong>
+                            </div>
+
+                            <div class="quotation-total">
+                                <span>Total Amount:</span>
+                                <strong id="quotationTotal">KES 0</strong>
+                            </div>
+                        </div>
+
+                        <div class="quotation-actions">
+                            <button type="button" class="btn btn-secondary" onclick="printQuotation()">
+                                <i class="fas fa-print"></i> Print
+                            </button>
+                            <button type="button" class="btn btn-primary" onclick="sendQuotationViaWhatsApp()">
+                                <i class="fab fa-whatsapp"></i> Send via WhatsApp
+                            </button>
+                        </div>
+
+                        <div class="quotation-footer">
+                            <p>Valid for 7 days • Contact us to confirm booking</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- M-PESA Payment Integration UI -->
+    <section id="payment" class="payment section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Secure Payment</h2>
+            <p class="section-subtitle" data-aos="fade-up">Fast and secure M-Pesa payment processing</p>
+
+            <div class="payment-container" data-aos="fade-up">
+                <div class="payment-form">
+                    <div class="payment-method-selector">
+                        <button class="method-btn active" onclick="selectPaymentMethod(event, 'mpesa')">
+                            <i class="fas fa-mobile"></i> M-Pesa
+                        </button>
+                        <button class="method-btn" onclick="selectPaymentMethod(event, 'card')">
+                            <i class="fas fa-credit-card"></i> Card
+                        </button>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="paymentAmount">Amount to Pay (KES) *</label>
+                        <input type="number" id="paymentAmount" placeholder="0.00" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="paymentPhone">Phone Number (254...) *</label>
+                        <input type="tel" id="paymentPhone" placeholder="254722113855" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="paymentRef">Payment Reference</label>
+                        <input type="text" id="paymentRef" placeholder="Auto-generated" disabled>
+                    </div>
+
+                    <button type="button" class="btn btn-primary btn-lg" onclick="initiatePayment()">
+                        <i class="fas fa-lock"></i> Initiate M-Pesa Payment
+                    </button>
+                </div>
+
+                <div class="payment-info">
+                    <div class="info-card">
+                        <h4><i class="fas fa-shield-alt"></i> Secure & Fast</h4>
+                        <ul>
+                            <li>✓ SSL Encrypted</li>
+                            <li>✓ Instant confirmation</li>
+                            <li>✓ Multiple payment methods</li>
+                            <li>✓ Receipt generation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Event Gallery</h2>
+            <p class="section-subtitle" data-aos="fade-up">Glimpses of our catering excellence</p>
+            <div class="gallery-actions" data-aos="fade-up">
+                <a href="gallery.html" class="btn btn-outline">Explore Full Gallery</a>
+            </div>
+
+            <div class="gallery-grid" data-aos="fade-up">
+                <div class="gallery-item">
+                    <img src="assets/images/gallery-1.jpg" alt="Kenya wedding catering celebration">
+                    <div class="gallery-overlay">
+                        <h3>Kenyan Wedding Catering</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/images/gallery-2.jpg" alt="Kenya corporate catering event">
+                    <div class="gallery-overlay">
+                        <h3>Corporate Events Kenya</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/images/gallery-3.jpg" alt="Kenyan birthday catering celebration">
+                    <div class="gallery-overlay">
+                        <h3>Birthday Celebrations</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/images/gallery-4.jpg" alt="Outdoor Kenya catering event">
+                    <div class="gallery-overlay">
+                        <h3>Outdoor Catering</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/images/gallery-5.jpg" alt="Luxury Kenyan dining experience">
+                    <div class="gallery-overlay">
+                        <h3>VIP Dining</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/images/gallery-6.jpg" alt="Kenyan event decoration and catering">
+                    <div class="gallery-overlay">
+                        <h3>Event Decoration</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
+            <p class="section-subtitle" data-aos="fade-up">Reach out to us for inquiries and bookings</p>
+
+            <div class="contact-content" data-aos="fade-up">
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="contactName">Your Name *</label>
+                            <input type="text" id="contactName" required>
+                            <small class="error-message"></small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactEmail">Email Address *</label>
+                            <input type="email" id="contactEmail" required>
+                            <small class="error-message"></small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactPhone">Phone Number *</label>
+                            <input type="tel" id="contactPhone" required>
+                            <small class="error-message"></small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactSubject">Subject *</label>
+                            <select id="contactSubject" required>
+                                <option value="">Select subject</option>
+                                <option value="booking">Booking Inquiry</option>
+                                <option value="quote">Quote Request</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <small class="error-message"></small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactMessage">Message *</label>
+                            <textarea id="contactMessage" rows="5" required></textarea>
+                            <small class="error-message"></small>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-lg">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <div class="contact-info">
+                    <div class="info-card">
+                        <i class="fas fa-phone"></i>
+                        <h4>Phone</h4>
+                        <p><a href="tel:+254722113855">+254 722 113 855</a></p>
+                    </div>
+
+                    <div class="info-card">
+                        <i class="fas fa-envelope"></i>
+                        <h4>Email</h4>
+                        <p><a href="mailto:pattsveecatering@gmail.com">pattsveecatering@gmail.com</a></p>
+                    </div>
+
+                    <div class="info-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Location</h4>
+                        <p>Hass Petroleum Station<br>Migori, Kenya</p>
+                    </div>
+
+                    <div class="info-card">
+                        <i class="fab fa-whatsapp"></i>
+                        <h4>WhatsApp</h4>
+                        <p><a href="https://wa.me/254722113855" target="_blank">Chat with us</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Google Maps Embed -->
+            <div class="map-container" data-aos="fade-up">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.5516693150556!2d34.4637!3d-1.7255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMcKwNDMnMzAuMiJTIDM0wrwyNycyOC43IkU!5e0!3m2!1sen!2s!4v1234567890" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Client Testimonials</h2>
+
+            <div class="testimonials-slider" data-aos="fade-up">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Pattsvee Catering made our wedding day absolutely perfect. The food was exquisite and the service was impeccable!"</p>
+                    <p class="testimonial-author">- Margaret Kipchoge</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Professional, reliable, and incredibly delicious! They handled our corporate event flawlessly."</p>
+                    <p class="testimonial-author">- David Ochieng</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Best catering service in Migori! Highly recommended for any occasion. Outstanding quality and value."</p>
+                    <p class="testimonial-author">- Jane Mwangi</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Frequently Asked Questions</h2>
+
+            <div class="faq-container" data-aos="fade-up">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>How far in advance should I book?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We recommend booking at least 2-3 weeks in advance for standard events. For large events (500+ guests), we suggest booking 1-2 months ahead for better menu customization.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Do you cater to dietary restrictions?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! We accommodate vegetarian, vegan, gluten-free, halal, and other dietary requirements. Please inform us during the booking process.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>What payment methods do you accept?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We accept M-Pesa, bank transfers, card payments, and cash. A 30% deposit is required to confirm your booking.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Can you deliver outside Migori?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we deliver within a 50km radius of Migori. For farther distances, additional transportation fees apply. Contact us for details.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>What if I need to cancel or reschedule?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Cancellations more than 7 days before the event receive a full refund. 3-7 days: 50% refund. Less than 3 days: no refund unless rescheduled.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Do you provide servers and setup?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! All our packages include professional waitstaff, setup, and cleanup. We ensure seamless service throughout your event.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About Pattsvee</h4>
+                    <p>Premium catering services for every occasion in Migori, Kenya. 8+ years of excellence in culinary experiences.</p>
+                    <div class="social-links">
+                        <a href="https://wa.me/254722113855" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://facebook.com" title="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://instagram.com" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#packages">Packages</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Hours of Operation</h4>
+                    <ul>
+                        <li>Monday - Friday: 7:00 AM - 6:00 PM</li>
+                        <li>Saturday: 8:00 AM - 5:00 PM</li>
+                        <li>Sunday: 10:00 AM - 4:00 PM</li>
+                        <li>24/7 WhatsApp Support</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Pattsvee Catering. All rights reserved.</p>
+                <p>Located at: Hass Petroleum Station, Migori, Kenya | Email: <a href="mailto:pattsveecatering@gmail.com">pattsveecatering@gmail.com</a> | Phone: <a href="tel:+254722113855">+254 722 113 855</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Floating WhatsApp & Email Buttons -->
+    <div class="floating-buttons">
+        <a href="https://wa.me/254722113855" class="floating-btn whatsapp" target="_blank" title="Chat on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="mailto:pattsveecatering@gmail.com" class="floating-btn email" title="Send Email">
+            <i class="fas fa-envelope"></i>
+        </a>
+    </div>
+
+    <!-- Booking Success Modal -->
+    <div class="modal" id="successModal">
+        <div class="modal-content success-content">
+            <div class="success-animation">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2>Booking Confirmed!</h2>
+            <p>Your booking has been successfully submitted. Our team will contact you shortly to confirm details.</p>
+            <p class="booking-ref">Booking Reference: <strong id="bookingReference">--</strong></p>
+            <div class="modal-buttons">
+                <button class="btn btn-primary" onclick="closeSuccessModal()">Close</button>
+                <a href="https://wa.me/254722113855" target="_blank" class="btn btn-secondary">
+                    <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
